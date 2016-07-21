@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   	android:orientation="vertical">
+   	
+    <FrameLayout
+	    android:id="@+id/layout_header_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/card_go"
+	   		android:orientation="vertical" 
+		    android:layout_margin="10dp"
+		    android:padding="5dp">
+		    
+			<TextView
+			    android:id="@+id/header_up_theme_name"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:textColor="@color/Gray"
+			    android:layout_margin="3dp"
+			    android:textSize="@dimen/header_themes_name_textsize"/>
+			
+			<TextView
+			    android:id="@+id/header_up_counter"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:textColor="#fff1693c"
+			    android:layout_margin="3dp"
+			    android:textSize="30sp"/>
+			    
+		    <Button
+		        android:id="@+id/header_up_submit"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_margin="10dp"
+			    android:paddingLeft="10dp"
+			    android:paddingRight="10dp"
+			    android:layout_gravity="center"
+			    android:background="@drawable/main_button"
+			    android:textColor="@color/White"
+		    	android:textSize="@dimen/header_themes_decline_textsize"
+			    android:text="@string/submit_question"/>
+		</LinearLayout>
+		<TextView
+		    android:id="@+id/header_up_qmark"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="top|right"
+		    android:textColor="@color/booster_shop_textview"
+			android:layout_margin="20dp"
+		    android:text="@string/qmark"
+		    android:textSize="25sp"/>
+	</FrameLayout>
+</LinearLayout>

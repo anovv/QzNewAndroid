@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:background="@color/light_gray_1">
+ 
+    <PreferenceCategory android:title="@string/user_profile" >
+        <EditTextPreference
+                android:title="@string/username_cap"
+                android:summary="@string/change_username"
+                android:key="qz_name_edittext"/>
+    </PreferenceCategory>
+     
+    <PreferenceCategory android:title="@string/application" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="qz_is_available_checkbox"
+            android:summary="@string/turn_off_push"
+            android:title="@string/push_notif" >
+        </CheckBoxPreference>
+    </PreferenceCategory>
+ 
+    <Preference android:title="@string/save"
+                android:key="button_confirm"
+                android:summary="@string/click_save"/>
+    
+    <Preference android:title="@string/logout"
+                android:key="button_logout"
+                android:summary="@string/click_logout"/>
+    
+</PreferenceScreen>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+       	android:id="@+id/fragment_userlist_view"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+    	android:orientation="vertical"
+    	android:visibility="invisible">
+    	
+        <RelativeLayout
+            android:id="@+id/fragment_userlist_search_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray_1"
+            android:padding="10dp" >
+            
+            <Button
+                android:id="@+id/fragment_userlist_search_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/fragment_userlist_search_edittext"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/card_cus_search_but"/>
+            
+            <EditText
+                android:id="@+id/fragment_userlist_search_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/fragment_userlist_search_button"
+                android:background="@drawable/card_cus_search_et"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:padding="6dp" />
+
+        </RelativeLayout>
+        
+	    <View
+		    android:id="@+id/separator"
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@color/light_gray_2"/>
+        
+	    <ListView
+	        android:id="@android:id/list"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:listSelector="@android:color/transparent"
+	        android:divider="@android:color/transparent"
+	        android:scrollbars="none">
+    	</ListView>
+    </LinearLayout>
+    
+    <ProgressBar android:id="@+id/fragment_userlist_progressbar"
+        style="?android:progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+ 	
+ 	<RelativeLayout
+        android:id="@+id/fragment_userlist_error_view"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:visibility="invisible">
+        
+	    <TextView 
+	        android:id="@+id/fragment_userlist_error_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:textColor="@color/Gray"
+        	android:textSize="15sp"
+        	android:text="@string/no_connection"/>	
+        
+	    <Button
+	        android:id="@+id/fragment_userlist_error_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/fragment_userlist_error_textview"
+        	android:layout_centerHorizontal="true"
+        	android:layout_marginTop="20dp"
+        	android:padding="10dp"
+        	android:textSize="15sp"
+        	android:textColor="@color/White"
+        	android:background="@drawable/main_button"
+	        android:text="@string/refresh"/>
+	    
+		<TextView
+	        android:id="@+id/fragment_userlist_find_textview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:textColor="@color/clickable_textview"
+	        android:gravity="center"
+	        android:layout_margin="2dp"
+	        android:layout_below="@id/fragment_userlist_error_textview"
+        	android:layout_centerHorizontal="true"
+	        android:text="@string/find_people"
+	        android:visibility="gone"/>
+	      
+    </RelativeLayout>
+        
+</FrameLayout>

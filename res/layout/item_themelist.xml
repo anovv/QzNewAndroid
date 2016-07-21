@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp">
+    
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+            
+	    <RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/card_go">
+			
+	        <ImageView
+	            android:id="@+id/item_themelist_main_imageview"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:padding="10dp"
+			    android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true"/>
+	        
+	        <TextView
+	            android:id="@+id/item_themelist_name_textview"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="5dp"
+			    android:paddingLeft="10dp"
+			    android:layout_toRightOf="@id/item_themelist_main_imageview"
+			    android:textSize="18sp"
+			    android:gravity="center"/>
+	        
+	        <TextView
+	            android:id="@+id/item_themelist_description_textview"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:paddingTop="2dp"
+			    android:paddingBottom="5dp"
+			    android:paddingLeft="10dp"
+			    android:textColor="@color/Gray"
+			    android:layout_toRightOf="@id/item_themelist_main_imageview"
+			    android:layout_below="@id/item_themelist_name_textview"
+			    android:textSize="12sp"
+			    android:gravity="center"/>
+	        
+	        <ImageView
+	            android:id="@+id/item_themelist_imageview"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:padding="10dp"
+			    android:layout_alignParentRight="true"
+			    android:layout_centerVertical="true"
+			    android:background="@drawable/icon_more_black"/>
+	    </RelativeLayout>
+	    
+	    <LinearLayout
+	        android:id="@+id/item_themelist_menu_view"
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/menu_view_height"
+		    android:background="@drawable/card_go_bot"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:orientation="vertical"
+	        android:visibility="gone">
+	        
+	        <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+		    	android:orientation="horizontal">
+	            
+	            <Button
+		        	android:id="@+id/item_themelist_random_button"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:layout_margin="2dp"
+				    android:textSize="12sp"
+				    android:focusable="false"
+				    android:background="@drawable/main_button"
+				    android:textColor="@color/White"
+			        android:text="@string/random_player"/>
+			    <Button
+		        	android:id="@+id/item_themelist_friend_button"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:layout_margin="2dp"
+				    android:textSize="12sp"
+				    android:focusable="false"
+				    android:background="@drawable/main_button"
+				    android:textColor="@color/White"
+			        android:text="@string/with_friend"/>
+	        </LinearLayout>
+		 
+		 	<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+		    	android:orientation="horizontal">
+	        
+			    <Button
+		        	android:id="@+id/item_themelist_score_button"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:layout_margin="2dp"
+				    android:textSize="12sp"
+				    android:focusable="false"
+				    android:background="@drawable/main_button"
+				    android:textColor="@color/White"
+			        android:text="@string/scores"/>
+			    
+			    <Button
+		        	android:id="@+id/item_themelist_comments_button"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:layout_margin="2dp"
+				    android:textSize="12sp"
+				    android:focusable="false"
+				    android:background="@drawable/main_button"
+				    android:textColor="@color/White"
+			        android:text="@string/comments"/>
+		    </LinearLayout>
+	    </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

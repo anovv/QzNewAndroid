@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <FrameLayout
+        android:id="@+id/layout_header_comments_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    
+	    <ProgressBar android:id="@+id/activity_comments_progressbar"
+	        style="?android:progressBarStyle"
+	        android:layout_margin="5dp"
+		    android:layout_width="30dp"
+		    android:layout_height="30dp"
+	        android:layout_gravity="center"/>
+    </FrameLayout>
+
+</LinearLayout>

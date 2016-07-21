@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal">
+    
+     <ImageView
+        android:id="@+id/layout_game_dialog_imageview"
+	    android:layout_width="50dp"
+	    android:layout_height="50dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:background="@drawable/help_icon"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"/>
+    
+    <View
+        android:id="@+id/separator"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@color/White"
+	    android:layout_below="@id/layout_game_dialog_imageview"/>
+    
+    <TextView
+        android:id="@+id/game_dialog_textview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:textColor="@color/White"
+	    android:gravity="center"
+	    android:textSize="20sp"
+	    android:padding="10dp"
+	    android:layout_below="@id/separator"/>
+    
+   	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/game_dialog_textview"
+	    android:orientation="horizontal">
+	    
+   	    <FrameLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1">
+	   	    <Button
+		        android:id="@+id/game_dialog_ok_button"
+			    android:layout_width="100dp"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="right"
+			    android:layout_marginRight="40dp"
+			    android:layout_marginTop="20dp"
+			    android:layout_marginBottom="10dp"
+			    android:textColor="@color/Gray"
+			    android:textSize="15sp"
+			    android:padding="5dp"
+			    android:text="@string/ok"
+			    android:background="@drawable/final_button"/>
+		</FrameLayout>
+		
+		<FrameLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1">
+	   
+	   	    <Button
+	   	        android:id="@+id/game_dialog_cancel_button"
+	   	        android:layout_width="100dp"
+	   	        android:layout_height="wrap_content"
+			    android:layout_gravity="left"
+			    android:layout_marginLeft="40dp"
+			    android:layout_marginTop="20dp"
+			    android:layout_marginBottom="10dp"
+	   	        android:background="@drawable/final_button"
+	   	        android:padding="5dp"
+	   	        android:text="@string/cancel"
+	   	        android:textColor="@color/Gray"
+	   	        android:textSize="15sp" />
+   	    </FrameLayout>
+    
+    </LinearLayout>
+
+</RelativeLayout>

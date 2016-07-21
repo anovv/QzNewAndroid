@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/light_gray_1">
+	
+	<LinearLayout
+	    android:id="@+id/layout_miniscore_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+		android:orientation="vertical">
+	
+	    <TextView
+	       	android:id="@+id/layout_miniscore_title_textview" 
+		    android:layout_margin="10dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/scores"
+		    android:gravity="center"
+		    android:textSize="15sp"
+		    android:textColor="@color/teal"/>
+	    
+	   	<LinearLayout
+	       	android:id="@+id/layout_miniscore_ll" 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="10dp"
+		    android:background="@drawable/card_cus"
+		    android:orientation="vertical">
+	   	</LinearLayout>
+	   	
+	   	<TextView
+	       	android:id="@+id/layout_miniscore_duel_title_textview" 
+		    android:layout_margin="10dp"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:text="@string/duels"
+		    android:gravity="center"
+		    android:textSize="15sp"
+		    android:textColor="@color/teal"/>
+	   	
+	   	<RelativeLayout
+	       	android:id="@+id/layout_miniscore_duel_view" 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="10dp"
+		    android:background="@drawable/card_cus">
+		    
+	   	    <TextView
+		       	android:id="@+id/layout_miniscore_duel_user_title" 
+			    android:layout_margin="10dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_alignParentTop="true"
+			    android:text="@string/you"
+			    android:gravity="center"
+			    android:textSize="15sp"
+		    	android:textColor="@color/Gray"/>
+	   	    
+	   	    <TextView
+		       	android:id="@+id/layout_miniscore_duel_op_title" 
+			    android:layout_margin="10dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true"
+			    android:layout_alignParentTop="true"
+			    android:text="@string/opponent"
+			    android:gravity="center"
+			    android:textSize="15sp"
+		    	android:textColor="@color/Gray"/>
+	   	    
+	   	    
+	   	    <TextView
+		       	android:id="@+id/layout_miniscore_vs_textview" 
+			    android:layout_margin="10dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:layout_alignParentTop="true"
+			    android:text="@string/vs"
+			    android:gravity="center"
+			    android:textSize="15sp"
+		    	android:textColor="@color/Gray"/>
+		    
+	   	    <TextView
+		       	android:id="@+id/layout_miniscore_duel_user_score" 
+			    android:layout_margin="10dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_below="@id/layout_miniscore_duel_user_title"
+			    android:text="@string/scores"
+			    android:gravity="center"
+			    android:textSize="25sp"/>
+	   	    
+	   	    <TextView
+		       	android:id="@+id/layout_miniscore_duel_op_score" 
+			    android:layout_margin="10dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentRight="true"
+			    android:layout_below="@id/layout_miniscore_duel_op_title"
+			    android:text="@string/scores"
+			    android:gravity="center"
+			    android:textSize="25sp"/>
+	   	</RelativeLayout>
+	</LinearLayout>
+	
+	<TextView
+       	android:id="@+id/layout_miniscore_empty_textview" 
+	    android:layout_width="match_parent"
+	    android:layout_height="200dp"
+	    android:gravity="center"
+	    android:textSize="15sp"
+	    android:textColor="@color/Gray"
+	    android:visibility="gone"/>
+
+</FrameLayout>

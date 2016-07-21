@@ -1,0 +1,85 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    			
+    <ProgressBar 
+        android:id="@+id/fragment_themes_progressbar" 
+        style="?android:progressBarStyle" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    
+	<FrameLayout
+	    android:id="@+id/fragment"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="invisible">
+	</FrameLayout>
+	
+	<LinearLayout 
+		android:id="@+id/fragment_themes_buttons_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/buttons_view_height"
+	    android:orientation="vertical"
+	    android:layout_gravity="bottom"
+	    android:visibility="gone">
+		
+		<View
+		    android:id="@+id/separator"
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@color/light_gray_2"/>
+		
+		<FrameLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+		    
+			<Button
+			    android:background="@android:color/transparent"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"/>
+			
+			<LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content" 
+			    android:background="@color/light_gray_1"
+			    android:paddingLeft="20dp"
+			    android:paddingRight="20dp"
+			    android:paddingTop="20dp"
+			    android:paddingBottom="20dp"
+		    	android:orientation="horizontal">
+		    	
+			    <Button
+			    	android:id="@+id/fragment_themes_all_button"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textSize="15sp"
+				    android:textColor="@color/White"
+				    android:background="@drawable/sec_button_left_pressed"
+				    android:text="@string/all_themes"/>
+			    
+			    <Button
+			    	android:id="@+id/fragment_themes_popular_button"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textSize="15sp"
+				    android:textColor="@color/Gray"
+				    android:background="@drawable/sec_button_mid_normal"
+				    android:text="@string/popular"/>
+			    
+			    <Button
+			    	android:id="@+id/fragment_themes_favorite_button"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1"
+				    android:textSize="15sp"
+				    android:textColor="@color/Gray"
+				    android:background="@drawable/sec_button_right_normal"
+				    android:text="@string/favorite"/>
+			</LinearLayout>
+		</FrameLayout>
+	</LinearLayout>
+</FrameLayout>

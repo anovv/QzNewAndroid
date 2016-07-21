@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout 
+   	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="@color/teal">
+    
+	<RelativeLayout
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent">
+        
+	    <Button
+	       	android:id="@+id/activity_game_loading_offline_button"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginBottom="20dp"
+	        android:layout_marginTop="20dp"
+	        android:textColor="@color/White"
+	        android:textSize="12sp"
+	        android:background="@drawable/floating_button_teal"
+	        android:text="@string/start_offline"
+	        android:visibility="gone"/>
+	       
+	    <TextView
+	        android:id="@+id/activity_game_loading_notif_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="40dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_toRightOf="@id/activity_game_loading_offline_button"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:textColor="@color/White"
+	        android:visibility="gone"/>
+    </RelativeLayout>
+    
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	       	
+	    <LinearLayout
+	        android:id="@+id/activity_game_loading_progressbar" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	       	android:layout_centerInParent="true"
+	       	android:orientation="horizontal">
+	       	
+	        <TextView
+		        android:id="@+id/dot1" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:textSize="30sp"
+		        android:textColor="@color/White"
+		        android:padding="2dp"
+		        android:text="."/>
+	        <TextView
+		        android:id="@+id/dot2" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:textSize="30sp"
+		        android:textColor="@color/White"
+		        android:padding="2dp"
+		        android:text="."/>
+	        <TextView
+		        android:id="@+id/dot3" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:textSize="30sp"
+		        android:textColor="@color/White"
+		        android:padding="2dp"
+		        android:text="."/>
+	        <TextView
+		        android:id="@+id/dot4" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:textSize="30sp"
+		        android:textColor="@color/White"
+		        android:padding="2dp"
+		        android:text="."/>
+	        
+	        <TextView
+		        android:id="@+id/dot5" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:textSize="30sp"
+		        android:textColor="@color/White"
+		        android:padding="2dp"
+		        android:text="."/>
+	       	
+	    </LinearLayout>
+	    
+	    
+	    <TextView
+	        android:id="@+id/activity_game_loading_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:layout_marginTop="5dp"
+	       	android:layout_centerInParent="true"
+	        android:layout_above="@id/activity_game_loading_progressbar"
+	        android:textColor="@color/White"/>
+	        
+	    <ImageView
+	        android:id="@+id/activity_game_loading_imageview"
+	        android:layout_width="150dp"
+	        android:layout_height="150dp"
+	        android:layout_margin="20dp"
+	       	android:layout_centerInParent="true"
+	        android:layout_above="@id/activity_game_loading_textview"
+	       	android:visibility="invisible"
+	        android:background="@drawable/img_bg"/>
+	    
+	    <TextView
+	        android:id="@+id/activity_game_loading_user_name_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_below="@id/activity_game_loading_progressbar"
+	       	android:layout_centerInParent="true"
+	        android:layout_marginTop="30dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	       	android:textColor="@color/White"/>
+	    
+	    <TextView
+	        android:id="@+id/activity_game_loading_level_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/activity_game_loading_user_name_textview"
+	       	android:layout_centerInParent="true"
+	        android:textSize="15sp"
+	        android:layout_margin="5dp"
+	       	android:textColor="@color/White"/>
+	    
+	</RelativeLayout>
+
+</FrameLayout>

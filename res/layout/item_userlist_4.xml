@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:background="@drawable/card_go"
+	    android:orientation="horizontal">
+	    
+	    <ImageView
+	    	android:id="@+id/item_userlist_imageview"
+	    	android:layout_width="50dp"
+	    	android:layout_height="50dp"
+	    	android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	    	android:background="@drawable/no_profile"/>
+	    
+	    <TextView 
+	        android:id="@+id/item_userlist_name_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:paddingLeft="10dp"
+	        android:textSize="15sp"
+	        android:textColor="@color/Gray"
+	        android:layout_toRightOf="@+id/item_userlist_imageview"/>
+	    
+	</RelativeLayout>
+</FrameLayout>
+

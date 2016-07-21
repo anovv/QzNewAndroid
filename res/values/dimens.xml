@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">10dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+    <dimen name="menu_view_height">120dp</dimen>
+    <dimen name="dialog_profile_imageview_width">300dp</dimen>
+    <dimen name="dialog_profile_imageview_height">300dp</dimen>
+    <dimen name="header_themes_name_textsize">20dp</dimen>
+    <dimen name="header_themes_themename_textsize">15dp</dimen>
+    <dimen name="header_themes_accept_textsize">15dp</dimen>
+    <dimen name="buttons_view_height">80dp</dimen>
+    <dimen name="header_themes_decline_textsize">15dp</dimen>
+
+</resources>

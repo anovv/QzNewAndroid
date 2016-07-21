@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+	<LinearLayout
+	   	android:id="@+id/fragment_themelist_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	   	android:orientation="vertical">
+	    	
+	    <LinearLayout
+	        android:id="@+id/fragment_themelist_search_view"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/light_gray_1"
+	        android:padding="10dp" >
+	            
+	        <EditText
+	            android:id="@+id/fragment_themelist_search_edittext"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/card_cus"
+		    	android:singleLine="true"
+	            android:inputType="text"
+	            android:padding="6dp" />
+	    </LinearLayout>
+	        
+	    <View
+		    android:id="@+id/separator"
+		    android:layout_width="match_parent"
+		    android:layout_height="1dp"
+		    android:background="@color/light_gray_2"/>
+	       
+	    <ListView
+	        android:id="@android:id/list"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:dividerHeight="4dp"
+		    android:listSelector="@android:color/transparent"
+	        android:divider="@android:color/transparent"
+	        android:scrollbars="none">
+	   	</ListView>
+	</LinearLayout>
+	
+	<RelativeLayout
+        android:id="@+id/fragment_themelist_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+	    android:visibility="gone">
+
+		<TextView
+	        android:id="@+id/fragment_themelist_empty_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:layout_centerInParent="true"
+	        android:textColor="@color/Gray"
+	        android:text="@string/no_themes_but"/>
+		
+		<TextView
+	        android:id="@+id/fragment_themelist_help_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="15sp"
+	        android:layout_below="@id/fragment_themelist_empty_textview"
+	        android:layout_centerInParent="true"
+	        android:textColor="@color/clickable_textview"
+	        android:text="@string/you_can_help"/>
+		
+	</RelativeLayout>
+</FrameLayout>
+

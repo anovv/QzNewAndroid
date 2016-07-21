@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal">
+    
+    <ImageView
+        android:id="@+id/layout_booster_dialog_imageview"
+	    android:layout_width="50dp"
+	    android:layout_height="50dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:background="@drawable/help_icon"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"/>
+    
+    <View
+        android:id="@+id/separator"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@color/White"
+	    android:layout_below="@id/layout_booster_dialog_imageview"/>
+    
+ 	<TextView
+        android:id="@+id/layout_booster_textview"
+	    android:layout_below="@id/separator"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:padding="10dp"
+	    android:textSize="15sp"
+	    android:textColor="@color/White"/>
+ 	
+ 	<TextView
+        android:id="@+id/layout_booster_shop_textview"
+	    android:layout_below="@id/layout_booster_textview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:paddingBottom="10dp"
+	    android:textSize="15sp"
+	    android:textColor="@color/booster_shop_textview"/>
+
+</RelativeLayout>

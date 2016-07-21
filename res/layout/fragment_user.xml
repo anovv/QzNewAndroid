@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ListView
+	    android:id="@android:id/list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone"/>
+    
+    <ScrollView
+	    android:id="@+id/fragment_user_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+		android:background="@color/light_gray_1"
+		android:scrollbars="none"
+		android:visibility="invisible">
+    
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+			android:orientation="vertical">
+	            
+		    <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+				android:orientation="vertical">
+		        
+			    <LinearLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:background="@color/light_teal">
+					
+			        <FrameLayout
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content">
+				        
+			            <TextView
+				        	android:id="@+id/fragment_user_booster_textview"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:textSize="20sp"
+				        	android:layout_gravity="top|right"
+					        android:paddingTop="5dp"
+					        android:paddingRight="10dp"
+					        android:textColor="@color/booster_textview"/>
+			            
+				        <TextView
+					        android:id="@+id/fragment_user_name_textview"
+					        android:layout_width="match_parent"
+					        android:layout_height="wrap_content"
+					        android:layout_marginTop="22dp"
+					        android:layout_marginRight="10dp"
+					        android:layout_marginLeft="10dp"
+					        android:gravity="center"
+					        android:textSize="25sp"
+					        android:textColor="@color/White"/>
+			        </FrameLayout>
+				
+				        
+			        <TextView
+				        android:id="@+id/fragment_user_status_textview"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:gravity="center"
+				        android:layout_margin="10dp"
+				        android:textColor="@color/White"
+				        android:textSize="15sp"/>
+			        
+			        <TextView
+				        android:id="@+id/fragment_user_bestin_textview"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:gravity="center"
+				        android:layout_marginRight="10dp"
+				        android:layout_marginLeft="10dp"
+				        android:layout_marginBottom="10dp"
+				        android:background="@drawable/bestin_bg"
+				        android:textColor="@color/White"
+				        android:textSize="20sp"/>
+		        </LinearLayout>
+		        
+			    <FrameLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content">
+	            
+				    <LinearLayout
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+						android:orientation="vertical">
+					    <View
+						    android:layout_width="match_parent"
+						    android:layout_height="80dp"
+							android:background="#ff4dbcb6"/>
+					    <View
+						    android:layout_width="match_parent"
+						    android:layout_height="1dp"
+						    android:background="@color/White"/>
+				    
+				    </LinearLayout>
+			        
+				    <FrameLayout
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+					    android:layout_gravity="center"
+					    android:layout_margin="10dp">
+					    
+				        <ImageView
+					        android:id="@+id/fragment_user_profile_imageview"
+					        android:layout_width="150dp"
+					        android:layout_height="150dp"
+					        android:background="@drawable/img_bg"/>
+				        
+				        <FrameLayout
+			        		android:id="@+id/fragment_user_uploadimage_button"
+					        android:layout_width="30dp"
+					        android:layout_height="30dp"
+				            android:padding="5dp"
+						    android:background="@drawable/upload_pic_bg"
+						    android:layout_gravity="top|right">
+					
+					        <View
+						        android:layout_width="match_parent"
+						        android:layout_height="match_parent"
+						        android:background="@drawable/ic_action_new"/>
+				        </FrameLayout>
+				        
+				    </FrameLayout>
+		    	</FrameLayout>
+		    </LinearLayout>
+        
+		    <LinearLayout
+			    android:id="@+id/fragment_user_buttons_view"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+				android:layout_margin="10dp"
+				android:orientation="horizontal">
+		            
+			    <Button
+			        android:id="@+id/fragment_user_addfriend_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="40dp"
+			        android:layout_weight="1"
+		        	android:layout_margin="2dp"
+			        android:background="@drawable/profile_button"
+			        android:textColor="@color/light_teal"
+			        android:textSize="12sp"
+			        android:text="@string/add_friend"/>     
+			         
+			    <Button
+			        android:id="@+id/fragment_user_unfriend_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="40dp"
+			        android:layout_weight="1"
+		        	android:layout_margin="2dp"
+			        android:background="@drawable/profile_button"
+			        android:textColor="@color/light_teal"
+			        android:textSize="12sp"
+			        android:text="@string/unfriend"/> 
+			        
+			    <Button
+			        android:id="@+id/fragment_user_blockuser_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="40dp"
+			        android:layout_weight="1"
+		        	android:layout_margin="2dp"
+			        android:background="@drawable/profile_button"
+			        android:textColor="@color/light_teal"
+			        android:textSize="12sp"
+			        android:text="@string/block_user"/>     
+			        
+			    <Button
+			        android:id="@+id/fragment_user_unblockuser_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="40dp"
+			        android:layout_weight="1"
+		        	android:layout_margin="2dp"
+			        android:background="@drawable/profile_button"
+			        android:textColor="@color/light_teal"
+			        android:textSize="12sp"
+			        android:text="@string/unblock"/>   
+			    
+			    <Button
+			        android:id="@+id/fragment_user_chat_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="40dp"
+			        android:layout_weight="1"
+		        	android:layout_margin="2dp"
+			        android:background="@drawable/profile_button"
+			        android:textColor="@color/light_teal"
+			        android:textSize="12sp"
+			        android:text="@string/chat"/>    
+			        
+			    <Button
+			        android:id="@+id/fragment_user_friends_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="40dp"
+			        android:layout_weight="1"
+		        	android:layout_margin="2dp"
+			        android:background="@drawable/profile_button"
+			        android:textColor="@color/light_teal"
+			        android:textSize="12sp"
+			        android:text="@string/friends"/>    
+			    
+		        
+		    </LinearLayout>
+		    
+	        <include android:id="@+id/fragment_user_score_view"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        layout="@layout/layout_miniscore"/>
+	        
+	    </LinearLayout>
+    </ScrollView>
+    
+    <ProgressBar 
+        android:id="@+id/fragment_user_progressbar" 
+        style="?android:progressBarStyle" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>    
+    
+    <RelativeLayout
+        android:id="@+id/fragment_user_error_view"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:visibility="invisible">
+        
+	    <TextView 
+	        android:id="@+id/fragment_user_error_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:textColor="@color/Gray"
+        	android:textSize="15sp"
+        	android:text="@string/no_connection"/>	
+        
+	    <Button
+	        android:id="@+id/fragment_user_error_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/fragment_user_error_textview"
+        	android:layout_centerHorizontal="true"
+        	android:layout_marginTop="20dp"
+        	android:padding="10dp"
+        	android:textSize="15sp"
+        	android:textColor="@color/White"
+        	android:background="@drawable/main_button"
+	        android:text="@string/refresh"/>
+    </RelativeLayout>
+        
+    <LinearLayout
+        android:id="@+id/floating_view"
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+	    
+        <Button
+        	android:id="@+id/floating_button"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:textColor="@color/White"
+            android:textSize="12sp"
+            android:background="@drawable/floating_button_shadow"
+            android:text="@string/play"/>
+        
+	</LinearLayout>
+</FrameLayout>

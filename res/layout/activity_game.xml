@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <include 
+    	android:id="@+id/activity_game_loading_view" 
+        layout="@layout/activity_game_loading"/>
+    
+    <include 
+    	android:id="@+id/activity_game_round_view" 
+        layout="@layout/activity_game_round"
+        android:visibility="invisible"/>
+    
+    <include 
+    	android:id="@+id/activity_game_main_view" 
+        layout="@layout/activity_game_main"
+        android:visibility="invisible"/>
+    
+    <include 
+    	android:id="@+id/activity_game_final_view" 
+        layout="@layout/activity_game_final"
+        android:visibility="invisible"/>
+    
+    <include 
+    	android:id="@+id/activity_game_error_view" 
+        layout="@layout/activity_game_error"
+        android:visibility="invisible"/>
+	
+	<FrameLayout
+	    android:id="@+id/activity_game_main_connection_warning_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/light_teal"
+        android:visibility="gone">
+	    
+	    <TextView
+	    	android:id="@+id/activity_game_main_connection_warning_textview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/White"
+	        android:textSize="15sp"
+	        android:padding="5dp"
+	        android:gravity="center"
+	        android:text="@string/bad_connection"/>
+	</FrameLayout>
+</FrameLayout>
+

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:id="@+id/fragment_conversations_view"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="invisible">
+	    
+	    <ListView
+	        android:id="@android:id/list"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:divider="@android:color/transparent"
+	        android:dividerHeight="4dp"
+	        android:scrollbars="none">
+    	</ListView>
+    	
+    </LinearLayout>
+    
+    <ProgressBar android:id="@+id/fragment_conversations_progressbar"
+        style="?android:progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+        
+    <TextView 
+        android:id="@+id/fragment_conversations_error_textview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       	android:gravity="center"
+       	android:textColor="@color/Gray"
+       	android:textSize="15sp"
+       	android:text="@string/no_connection"
+    	android:visibility="invisible"/>	
+	      
+</FrameLayout>

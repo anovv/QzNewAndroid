@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Brainer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Настройки</string>
+    <string name="title_activity_splash">Brainer</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_registervk">RegisterVKActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="splash_text">Brainer</string>
+    <string name="title_activity_settings">Настройки</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="header_themes_accept_text">Принять</string>
+    <string name="header_themes_decline_text">Отклонить</string>
+    <string name="search_title">Найти пользователя</string>
+    <string name="search_hint">Найти пользователя</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_game">GameActivity</string>
+    <string name="title_activity_purchase">Магазин</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- GameActivity -->
+    <string name="user_declined_request">Пользователь не хочет играть</string>
+    <string name="loading_questions">Загружаем вопросы...</string>
+    <string name="waiting_for_opponent">Соперник готовится...</string>
+    <string name="loading_images">Загрузка изображений...</string>
+    <string name="looking_for_opponent">Ищем соперника...</string>
+    <string name="notifying_opponent">Ждем ответа...</string>
+    <string name="looks_like_nobody_is_playing">Похоже никто не играет в эту тему. Поиграйте с друзьями!</string>
+    <string name="connection_timeout">Вы ждете слишком долго</string>
+    <string name="opponent_disconnected">Соперник рассоединился</string>
+    <string name="cant_connect_to_the_server">Не удалось подключится к серверу</string>
+    <string name="cant_save_results">Не удалось сохранить результаты</string>
+    <string name="opponent_surrendered">Соперник сдался</string>
+    <string name="you_won">Вы выиграли</string>
+    <string name="you_lost">Вы проиграли</string>
+    <string name="draw">Ничья</string>
+    <string name="quit">Хотите выйти?</string>
+    <string name="surrender">Хотите сдаться?</string>
+    <string name="wants_a_rematch">\u0020хочет реванш!</string>
+    <string name="level">Уровень\u0020</string>
+    <string name="round">Раунд\u0020</string>
+    <string name="last_round">Последний раунд</string>
+    <string name="bonus_x2">Бонус x2</string>
+
+    <!-- LoginActivity -->
+    <string name="wrong_credentials">Неверные данные</string>
+    <string name="no_connection">Нет соединения</string>
+    <string name="login_warning_1">Введите почту</string>
+    <string name="login_warning_2">Введите пароль</string>
+
+    <!-- MainActivity -->
+    <string name="home">Главная</string>
+    <string name="my_profile">Профиль</string>
+    <string name="friends">Друзья</string>
+    <string name="themes">Темы</string>
+    <string name="shop">Магазин</string>
+    <string name="settings">Настройки</string>
+    <string name="press_back">Нажмите назад еще раз для выхода</string>
+
+    <!-- RegisterActivity -->
+    <string name="register_warning_1">Пожалуйста, введите правильный адрес</string>
+    <string name="register_warning_2">Имя не может быть меньше 6 символов</string>
+    <string name="register_warning_3">Имя слишком длинное</string>
+    <string name="register_warning_4">Имя может содержать только один пробел</string>
+    <string name="register_warning_5">Пароль не может содержать пробелы</string>
+    <string name="register_warning_6">Пароль не может быть меньше 6 символов</string>
+    <string name="register_warning_7">Пароль слишком длинный</string>
+    <string name="register_warning_8">Неверный пароль</string>
+    <string name="register_warning_9">Этот адрес уже занят</string>
+
+    <!-- RegisterVKActivity -->
+    <string name="login_dots">Вход...</string>
+    <string name="login_error">Ошибка входа</string>
+    <string name="looking_for_vk_friends">Ищем ваших друзей...</string>
+    <string name="failed_to_find_friends">Не нашли:(</string>
+    <string name="friends_are_not_playing">Ваши друзья пока еще не с нами</string>
+    <string name="you_have">С нами уже\u0020</string>
+    <string name="friends_playing">\u0020ваших друзей!</string>
+
+    <!-- SettingsActivity -->
+    <string name="logout_dots">Выход...</string>
+    <string name="saving_dots">Сохранение...</string>
+    <string name="unable_to_save">Не удалось сохранить настройки</string>
+
+    <!-- MainFragment -->
+    <string name="new_themes">Новые</string>
+    <string name="popular">Популярные</string>
+    <string name="favorite">Сыгранные</string>
+    <string name="all_themes">Все темы</string>
+    <string name="wants_to_play">\u0020хочет играть!</string>
+
+    <!-- ScoreFragment -->
+    <string name="nobody_played">Пока никто не играл</string>
+
+    <!-- UserFragment -->
+    <string name="best_in">Лучший игрок в:</string>
+    <string name="you_blocked">Вы заблокировали этого пользователя</string>
+    <string name="user_blocked">Этот пользователь заблокировал Вас</string>
+    <string name="others_themename">Другие</string>
+    <string name="you_havent_played">Вы еще не играли</string>
+    <string name="you_havent_played_user">Вы не играли с этим пользователем</string>
+    <string name="done">Готово</string>
+    <string name="booster_advantage">Бустер дает Вам преимущество перед соперниками!</string>
+    <string name="booster_expire">Ваш бустер истечет через\u0020</string>
+    <string name="booster_refresh">Вы можете обновить его в магазине</string>
+    <string name="booster_buy">Вы можете достать его в магазине</string>
+    <string name="minutes">\u0020мин.</string>
+
+    <!-- UserFragment -->
+    <string name="not_found">Не найдено</string>
+    <string name="no_friends">У вас пока нет друзей</string>
+
+    <!-- XMLs -->
+    <string name="score_dots">Очки:\u0020</string>
+    <string name="win_bonus_dots">За победу:\u0020</string>
+    <string name="booster_dots">Бустер:\u0020</string>
+    <string name="total_dots">Общее:\u0020</string>
+    <string name="level_dots">Уровень:\u0020</string>
+    <string name="status_dots">Статус:\u0020</string>
+    <string name="dots">...</string>
+    <string name="rematch">Реванш</string>
+    <string name="zero">0</string>
+    <string name="bad_connection">Похоже что у Вас или Вашего соперника плохое соединение...</string>
+    <string name="login">Вход</string>
+    <string name="register_vk">Зайти через VK</string>
+    <string name="or">или</string>
+    <string name="email">почта</string>
+    <string name="password">пароль</string>
+    <string name="register">Регистрация</string>
+    <string name="refresh">Обновить</string>
+    <string name="username">имя</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="top">Топ</string>
+    <string name="no_themes_but">Тем пока нет, но</string>
+    <string name="you_can_help">Вы можете помочь</string>
+    <string name="add_friend">Добавить</string>
+    <string name="unfriend">Удалить</string>
+    <string name="block_user">Блокировать</string>
+    <string name="unblock">Разблокировать</string>
+    <string name="play">Играть</string>
+    <string name="random_player">Случайный соперник</string>
+    <string name="with_friend">Играть с другом</string>
+    <string name="scores">Результаты</string>
+    <string name="ok">Ок</string>
+    <string name="cancel">Отмена</string>
+    <string name="help_info">Если Вам нравится наше приложение, Вы можете помочь нам и добавить свои вопросы. Если Вы разбираетесь в какой-нибудь теме, напишите нам и мы ответим:</string>
+    <string name="duels">Дуэли</string>
+    <string name="you">Вы</string>
+    <string name="opponent">Соперник</string>
+    <string name="vs"></string>
+    <string name="search">Поиск</string>
+    <string name="more_themes_are_coming">Скоро появится больше тем и</string>
+    <string name="username_cap">Имя</string>
+    <string name="change_username">Изменить имя</string>
+    <string name="application">Приложение</string>
+    <string name="turn_off_push">Отключить push-уведомления</string>
+    <string name="push_notif">Push-уведомления</string>
+    <string name="save">Сохранить</string>
+    <string name="logout">Выйти</string>
+    <string name="click_logout">Нажмите чтобы выйти</string>
+    <string name="click_save">Нажмите чтобы сохранить изменения</string>
+    <string name="quit_short">Выход</string>
+    <string name="next_op">Дальше</string>
+    <string name="you_have_new_friend">У Вас новый друг!</string>
+    <string name="new_friend">Новый друг</string>
+    <string name="you_added_by">Вас добавил(а)\u0020</string>
+    <string name="start_offline">Игра\nОффлайн</string>
+    <string name="opp_turn">Очередь соперника</string>
+    <string name="completed_your_challenge">\u0020выполнил Ваш вызов!</string>
+    <string name="left_you_challenge">\u0020оставил Вам вызов!</string>
+    <string name="your_new_score">Ваш новый результат в этой теме:\u0020</string>
+    <string name="find_people">Найти людей</string>
+    <string name="offline_explain">Мы оповестили Вашего соперника. Как только он примет Ваш вызов, мы Вам сообщим!</string>
+    <string name="offline_loading_explain">Устали ждать? Сыграйте оффлайн, Ваш друг присоединится позже!</string>
+    <string name="offline_loading_random_explain">Устали ждать? Сыграйте в режиме оффлайн!</string>
+    <string name="record_not_found">Мы не нашли подходящего соперника, возможно, у Вас нет соединения</string>
+    <string name="title_friends">Друзья</string>
+    <string name="your_friends">Ваши друзья</string>
+    <string name="no_comments">Нет обсуждений</string>
+    <string name="comments">Обсуждения</string>
+    <string name="unable_to_post">Не удалось оставить комментарий</string>
+    <string name="now">Сейчас</string>
+    <string name="minutes_ago">\u0020мин. назад</string>
+    <string name="hours_ago">\u0020ч. назад</string>
+    <string name="days_ago">\u0020д. назад</string>
+    <string name="months_ago">\u0020мес. назад</string>
+    <string name="you_are_best_in">Вы лучший игрок в эту тему!</string>
+    <string name="booster_explain">Бустер увеличивает Ваш опыт в течение часа</string>
+    <string name="no_conversations">Нет сообщений</string>
+    <string name="title_profile">Профиль</string>
+    <string name="title_scores">Результаты</string>
+    <string name="title_themes">Темы</string>
+    <string name="title_home">Главная</string>
+    <string name="title_activity_comments">Обсуждения</string>
+    <string name="title_activity_chat">Сообщения</string>
+    <string name="messages">Сообщения</string>
+    <string name="no_messages">Сообщений нет</string>
+    <string name="cant_send_message">Не удалось отправить сообщение</string>
+    <string name="new_message">Новое сообщение</string>
+    <string name="chat">Переписка</string>
+    <string name="draw_in_theme">Ничья в теме\u0020</string>
+    <string name="you_won_in_theme">Вы выиграли в теме\u0020</string>
+    <string name="you_lost_in_theme">Вы проиграли в теме\u0020</string>
+    <string name="check_the_shop">Проверьте магазин</string>
+    <string name="rate">Оценить!</string>
+    <string name="user_profile">Профиль</string>
+    <string name="share">Рассказать!</string>
+    <string name="share_via">Рассказать через</string>
+    <string name="share_text">Нравится приложение? Вы нам очень поможете если расскажите о нем. Не бойтесь, мы ничего не опубликуем без Вашего ведома!</string>
+    <string name="left_a_challenge">\u0020оставил(а) Вам вызов. Ваш ход!</string>
+    <string name="rate_text">Если Вам нравится наше приложение, уделите минуту и оцените его! Нам это очень поможет!</string>
+    <string name="title_activity_submit_question">Добавить вопрос</string>
+    <string name="title1">Название темы</string>
+    <string name="title2">Вопрос</string>
+    <string name="title3">Изображение</string>
+    <string name="title4">Ответы</string>
+    <string name="explain1">Выберите название темы из списка. Если такой темы нет, введите свое название</string>
+    <string name="explain2">Введите вопрос</string>
+    <string name="explain3">Вы можете добавить изображение, если хотите</string>
+    <string name="explain4">Укажите варианты ответов. Не забудьте выбрать правильный</string>
+    <string name="submit">Отправить!</string>
+    <string name="ans_hint_1">Первый ответ</string>
+    <string name="ans_hint_2">Второй ответ</string>
+    <string name="ans_hint_3">Третий ответ</string>
+    <string name="ans_hint_4">Четвертый ответ</string>
+    <string name="hint1">Название темы</string>
+    <string name="hint2">Вопрос</string>
+    <string name="enter_question">Введите вопрос</string>
+    <string name="long_question">Вопрос слишком длинный</string>
+    <string name="short_question">Вопрос слишком короткий</string>
+    <string name="enter_theme_name">Введите название темы</string>
+    <string name="long_theme_name">Название слишком длинное</string>
+    <string name="short_theme_name">Название слишком короткое</string>
+    <string name="enter_ans1">Введите первый ответ</string>
+    <string name="long_ans1">Первый ответ слишком длинный</string>
+    <string name="short_ans1">Первый ответ короткий</string>
+    <string name="enter_ans2">Введите второй ответ</string>
+    <string name="long_ans2">Второй ответ слишком длинный</string>
+    <string name="short_ans2">Второй ответ короткий</string>
+    <string name="enter_ans3">Введите третий ответ</string>
+    <string name="long_ans3">Третий ответ слишком длинный</string>
+    <string name="short_ans3">Третий ответ короткий</string>
+    <string name="enter_ans4">Введите четвертый ответ</string>
+    <string name="long_ans4">Четвертый ответ слишком длинный</string>
+    <string name="short_ans4">Четвертый ответ короткий</string>
+    <string name="select_right">Выберите верный ответ</string>
+    <string name="thank_you">Спасибо! Вы восхитительны!</string>
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <string name="submit_question">Добавить Вопрос</string>
+    <string name="confirm_warning">Пожалуйста, убедитесь что Вы не допустили ошибок и верно указали ответы. Мы очень стараемся улучшить приложение и надеемся на Вашу помощь!</string>
+    <string name="all_button">Разблокировать все темы</string>
+    <string name="all_title">Tемы</string>
+    <string name="user_no_friends">У пользователя нет друзей</string>
+    <string name="qmark">\?</string>
+</resources>

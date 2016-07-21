@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+    
+    <ImageView
+        android:id="@+id/item_conversations_imageview"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/img_bg"
+        android:layout_marginRight="5dp"
+	    android:layout_width="60dp"
+	    android:layout_height="60dp"/>
+    
+    <TextView
+        android:id="@+id/item_conversations_timestamp_textview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="8dp"
+        android:textSize="12sp"
+        android:textColor="@color/Gray"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+    
+    <TextView
+        android:id="@+id/item_conversations_counter_textview"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:textSize="14sp"
+        android:textColor="@color/teal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+    
+    <TextView
+        android:id="@+id/item_conversations_name_textview"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/item_conversations_imageview"
+        android:layout_toLeftOf="@id/item_conversations_timestamp_textview"
+        android:textSize="14sp"
+        android:textColor="@color/teal"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+    
+    <TextView
+        android:id="@+id/item_conversations_message_textview"
+        android:layout_toRightOf="@id/item_conversations_imageview"
+        android:layout_toLeftOf="@id/item_conversations_timestamp_textview"
+        android:layout_below="@id/item_conversations_name_textview"
+        android:textSize="15sp"
+    	android:maxLines="2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"/>
+	
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="50dp"
+    android:paddingTop="20dp"
+    android:orientation="vertical">
+    
+	<TextView
+        android:id="@+id/layout_themelist_footer_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/Gray"
+        android:gravity="center"
+        android:layout_margin="3dp"
+        android:text="@string/more_themes_are_coming"/>
+	
+	<TextView
+        android:id="@+id/layout_themelist_footer_help_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/clickable_textview"
+        android:gravity="center"
+        android:layout_margin="2dp"
+        android:text="@string/you_can_help"/>
+	
+</LinearLayout>

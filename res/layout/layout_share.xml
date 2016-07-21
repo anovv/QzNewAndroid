@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:background="@color/teal">
+    
+     <ImageView
+        android:id="@+id/layout_share_imageview"
+	    android:layout_width="50dp"
+	    android:layout_height="50dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:background="@drawable/help_icon"
+	    android:layout_alignParentTop="true"
+	    android:layout_centerHorizontal="true"/>
+    
+    <View
+        android:id="@+id/separator"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@color/White"
+	    android:layout_below="@id/layout_share_imageview"/>
+    
+    <TextView
+        android:id="@+id/layout_share_textview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:textColor="@color/White"
+	    android:gravity="center"
+	    android:textSize="15sp"
+	    android:text="@string/share_text"
+	    android:padding="10dp"
+	    android:layout_below="@id/separator"/>
+    
+  	<Button
+        android:id="@+id/layout_share_button"
+	    android:layout_width="100dp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/layout_share_textview"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="10dp"
+	    android:textColor="@color/Gray"
+	    android:textSize="15sp"
+	    android:text="@string/share"
+	    android:background="@drawable/final_button"/>
+
+</RelativeLayout>

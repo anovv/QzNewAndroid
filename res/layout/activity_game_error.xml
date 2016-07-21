@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal">
+
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    
+	    <TextView 
+	        android:id="@+id/activity_game_error_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:layout_marginBottom="10dp"
+	        android:textColor="@color/White"
+	        android:layout_centerInParent="true"/>
+	    
+	    <Button 
+	        android:id="@+id/activity_game_error_button"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/activity_game_error_textview"
+	        android:layout_centerHorizontal="true"
+	        android:textColor="@color/Gray"
+	        android:textSize="15sp"
+	        android:background="@drawable/final_button"
+	        android:text="@string/quit_short"/>
+	
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:id="@+id/activity_game_error_offline_view"
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+        
+	    <Button
+	       	android:id="@+id/activity_game_error_offline_button"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginBottom="20dp"
+	        android:layout_marginTop="20dp"
+	        android:textColor="@color/White"
+	        android:textSize="12sp"
+	        android:background="@drawable/floating_button_teal"
+	        android:text="@string/start_offline"/>
+	       
+	    <TextView
+	        android:id="@+id/activity_game_error_notif_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12sp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_marginBottom="40dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_toRightOf="@id/activity_game_error_offline_button"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:gravity="center"
+	        android:textColor="@color/White"
+	        android:text="@string/offline_loading_explain"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,62 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray_1">
+    
+    <LinearLayout
+        android:id="@+id/activity_purchase_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+        android:visibility="invisible">
+        
+        <ListView
+	        android:id="@+id/activity_purchase_listview"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:dividerHeight="4dp"
+	        android:scrollbars="none"
+		    android:listSelector="@android:color/transparent"
+	        android:divider="@android:color/transparent"/>
+	</LinearLayout>
+	
+    <ProgressBar 
+        android:id="@+id/activity_purchase_progressbar" 
+        style="?android:progressBarStyle" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    
+    <RelativeLayout
+        android:id="@+id/activity_purchase_error_view"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:visibility="invisible">
+        
+	    <TextView 
+	        android:id="@+id/activity_purchase_error_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+        	android:layout_centerInParent="true"
+        	android:textColor="@color/Gray"
+        	android:textSize="15sp"
+        	android:text="@string/no_connection"/>	
+        
+	    <Button
+	        android:id="@+id/activity_purchase_error_button"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/activity_purchase_error_textview"
+        	android:layout_centerHorizontal="true"
+        	android:layout_marginTop="20dp"
+        	android:padding="10dp"
+        	android:textSize="15sp"
+        	android:textColor="@color/White"
+        	android:background="@drawable/main_button"
+	        android:text="@string/refresh"/>
+	      
+    </RelativeLayout>
+</FrameLayout>

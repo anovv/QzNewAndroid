@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:orientation="vertical">
+    
+    <ImageView
+	    android:layout_width="40dp"
+	    android:layout_height="40dp"
+	    android:layout_margin="10dp"
+	    android:layout_gravity="top|center"
+	    android:background="@drawable/drawer_shop_icon"/>
+    
+    <TextView
+        android:id="@+id/layout_purchase_booster_textview"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:textSize="13sp"
+	    android:textColor="@color/teal"
+	    android:padding="5dp"
+	    android:gravity="center"
+	    android:layout_gravity="bottom"
+	    android:text="@string/booster_explain"/>
+    
+    <RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+	    
+        <Button
+            android:id="@+id/layout_purchase_header_button_2"
+		    android:layout_width="60dp"
+		    android:layout_height="60dp"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginLeft="20dp"
+		    android:layout_marginRight="20dp"
+	    	android:layout_marginTop="70dp"
+		    android:textSize="18sp"
+		    android:textColor="@color/White"
+		    android:gravity="center"
+		    android:background="@drawable/floating_button_teal"/>
+        
+		    
+        <Button
+            android:id="@+id/layout_purchase_header_button_1"
+		    android:layout_width="60dp"
+		    android:layout_height="60dp"
+		    android:layout_toLeftOf="@id/layout_purchase_header_button_2"
+	    	android:layout_marginTop="70dp"
+		    android:textSize="18sp"
+		    android:textColor="@color/White"
+		    android:gravity="center"
+		    android:background="@drawable/floating_button_teal"/>
+		    
+        <Button
+            android:id="@+id/layout_purchase_header_button_3"
+		    android:layout_width="60dp"
+		    android:layout_height="60dp"
+		    android:layout_toRightOf="@id/layout_purchase_header_button_2"
+	    	android:layout_marginTop="70dp"
+		    android:textSize="18sp"
+		    android:textColor="@color/White"
+		    android:gravity="center"
+		    android:background="@drawable/floating_button_teal"/>
+        
+    </RelativeLayout>
+    
+</FrameLayout>

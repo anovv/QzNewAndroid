@@ -1,0 +1,245 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@color/light_gray_1">
+    
+    <ProgressBar 
+        android:id="@+id/activity_submit_progressbar"
+        style="?android:progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    
+    <ScrollView
+	    android:id="@+id/activity_submit_main_view"
+	    android:scrollbars="none"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="invisible">
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+		    
+		    <TextView
+		        android:id="@+id/activity_submit_title1_textview"
+		        android:textSize="20sp"
+		        android:gravity="center"
+		        android:layout_marginTop="20dp"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/title1"/>
+		    
+		    <TextView
+		        android:id="@+id/activity_submit_explain1_textview"
+		        android:textSize="13sp"
+		        android:gravity="center"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="20dp"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:textColor="@color/teal"
+			    android:text="@string/explain1"/>
+	        
+		    <AutoCompleteTextView
+		        android:id="@+id/activity_submit_ac_textview"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:hint="@string/hint1"
+			    android:layout_marginBottom="10dp"
+			    android:textSize="18sp"/>
+		    
+		    <TextView
+		        android:id="@+id/activity_submit_title2_textview"
+		        android:textSize="20sp"
+		        android:gravity="center"
+		        android:layout_marginTop="20dp"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/title2"/>
+		    
+		    <TextView
+		        android:id="@+id/activity_submit_explain2_textview"
+		        android:textSize="13sp"
+		        android:gravity="center"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="20dp"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:textColor="@color/teal"
+			    android:text="@string/explain2"/>
+		    
+		    <EditText
+		        android:id="@+id/activity_submit_question_editext"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginBottom="10dp"
+			    android:hint="@string/hint2"
+			    android:textSize="18sp"/>
+		    
+		    <TextView
+		        android:id="@+id/activity_submit_title3_textview"
+		        android:textSize="20sp"
+		        android:gravity="center"
+		        android:layout_marginTop="20dp"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/title3"/>
+		    
+		    <TextView
+		        android:id="@+id/activity_submit_explain3_textview"
+		        android:textSize="13sp"
+		        android:gravity="center"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="20dp"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:textColor="@color/teal"
+			    android:text="@string/explain3"/>
+		    
+		    <FrameLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+				android:layout_gravity="center"
+			    android:layout_margin="20dp">
+			    
+		        <ImageView
+			        android:id="@+id/activity_submit_imageview"
+			        android:layout_width="150dp"
+			        android:layout_height="150dp"
+				    android:background="@color/White"/>
+		        
+		        <FrameLayout
+	        		android:id="@+id/activity_submit_imageview_button"
+			        android:layout_width="150dp"
+			        android:layout_height="150dp">
+			        <View
+				        android:layout_width="50dp"
+				        android:layout_height="50dp"
+				    	android:layout_gravity="center"
+				        android:background="@drawable/ic_action_new"/>
+		        </FrameLayout>
+		    </FrameLayout>
+		    
+		    <TextView
+		        android:id="@+id/activity_submit_title4_textview"
+		        android:textSize="20sp"
+		        android:gravity="center"
+		        android:layout_marginTop="20dp"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/title4"/>
+		    
+		    <TextView
+		        android:id="@+id/activity_submit_explain4_textview"
+		        android:textSize="13sp"
+		        android:gravity="center"
+		        android:layout_marginTop="5dp"
+		        android:layout_marginBottom="20dp"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:textColor="@color/teal"
+			    android:text="@string/explain4"/>
+		    
+	    	<RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+			    android:layout_marginTop="20dp"
+			    android:layout_marginBottom="20dp">
+	            
+			    <CheckBox
+			        android:id="@+id/activity_submit_cb1"
+				    android:layout_width="30dp"
+				    android:layout_height="30dp"
+	                android:layout_alignParentRight="true"
+				    android:layout_centerVertical="true"/>
+	            
+	            <EditText
+	                android:id="@+id/activity_submit_ans1_editext"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+					android:hint="@string/ans_hint_1"
+					android:textSize="18sp"
+	                android:layout_toLeftOf="@id/activity_submit_cb1"/>
+	        </RelativeLayout>
+	        
+	    	<RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+			    android:layout_marginTop="20dp"
+			    android:layout_marginBottom="20dp">
+	            
+			    <CheckBox
+			        android:id="@+id/activity_submit_cb2"
+				    android:layout_width="30dp"
+				    android:layout_height="30dp"
+	                android:layout_alignParentRight="true"
+				    android:layout_centerVertical="true"/>
+	            
+	            <EditText
+	                android:id="@+id/activity_submit_ans2_editext"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+					android:hint="@string/ans_hint_2"
+					android:textSize="18sp"
+	                android:layout_toLeftOf="@id/activity_submit_cb2"/>
+	        </RelativeLayout>
+	        
+	    	<RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+			    android:layout_marginTop="20dp"
+			    android:layout_marginBottom="20dp">
+	            
+			    <CheckBox
+			        android:id="@+id/activity_submit_cb3"
+				    android:layout_width="30dp"
+				    android:layout_height="30dp"
+	                android:layout_alignParentRight="true"
+				    android:layout_centerVertical="true"/>
+	            
+	            <EditText
+	                android:id="@+id/activity_submit_ans3_editext"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+					android:hint="@string/ans_hint_3"
+					android:textSize="18sp"
+	                android:layout_toLeftOf="@id/activity_submit_cb3"/>
+	        </RelativeLayout>
+	        
+	    	<RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+			    android:layout_marginTop="20dp"
+			    android:layout_marginBottom="20dp">
+	            
+			    <CheckBox
+			        android:id="@+id/activity_submit_cb4"
+				    android:layout_width="30dp"
+				    android:layout_height="30dp"
+	                android:layout_alignParentRight="true"
+				    android:layout_centerVertical="true"/>
+	            
+	            <EditText
+	                android:id="@+id/activity_submit_ans4_editext"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+					android:hint="@string/ans_hint_4"
+					android:textSize="18sp"
+	                android:layout_toLeftOf="@id/activity_submit_cb4"/>
+	        </RelativeLayout>
+	        
+	    	<Button
+                android:id="@+id/activity_submit_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/main_button"
+                android:textColor="@color/White"
+                android:layout_margin="20dp"
+                android:text="@string/submit"
+                android:textSize="15sp"/>
+	    </LinearLayout>
+    </ScrollView>
+</FrameLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:left="-1dp">
+        <shape android:shape="rectangle" >
+    		<!-- <solid android:drawable="@drawable/ic_search"/> -->
+			<corners 
+			    android:bottomLeftRadius="0dp"
+			    android:topLeftRadius="0dp"
+			    android:bottomRightRadius="2dp"
+			    android:topRightRadius="2dp" />
+            <stroke 
+                android:width="1dp" 
+                android:color="@color/light_gray_2" />
+            <solid
+                android:color="@color/light_gray_1"/>
+        </shape>   
+    </item>
+    <item android:drawable="@drawable/ic_search_dark"
+        android:top="5dp"
+        android:bottom="5dp"
+        android:left="6dp"
+        android:right="6dp"/>
+</layer-list>

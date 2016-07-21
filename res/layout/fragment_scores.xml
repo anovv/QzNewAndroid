@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    
+	<LinearLayout
+	    android:id="@+id/fragment_scores_buttons_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/light_gray_1"
+	    android:paddingLeft="60dp"
+	    android:paddingRight="60dp"
+	    android:paddingTop="20dp"
+	    android:paddingBottom="20dp"
+    	android:orientation="horizontal">
+    	
+	    <Button
+	    	android:id="@+id/fragment_scores_top_button"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:textSize="15sp"
+		    android:textColor="@color/White"
+		    android:background="@drawable/sec_button_left_pressed"
+		    android:text="@string/top"/>
+	    
+	    <Button
+	    	android:id="@+id/fragment_scores_friends_button"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:textSize="15sp"
+		    android:textColor="@color/Gray"
+		    android:background="@drawable/sec_button_right_normal"
+		    android:text="@string/friends"/>
+	</LinearLayout>
+	
+    <View
+	    android:id="@+id/separator"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_above="@id/fragment_scores_buttons_layout"
+	    android:background="@color/light_gray_2"/>
+	
+	<FrameLayout
+	    android:id="@+id/fragment"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@id/separator">
+	</FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:name="http://schemas.android.com/apk/res-auto">
+	
+	<item android:id="@+id/empty"
+	      android:title=""
+	      name:showAsAction="always"/>
+</menu>
